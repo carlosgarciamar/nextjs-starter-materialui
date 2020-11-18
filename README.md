@@ -24,7 +24,8 @@ Or clone it and run `npm install`...
 
 Then `npm run dev`.
 
-# Thinking about adding...
+## Thinking about adding...
 
 * Jest
 * Conventional Commits
+* Cypress
