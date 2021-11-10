@@ -1,7 +1,6 @@
 import React, { ReactChild } from 'react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import GoogleFonts from 'next-google-fonts';
 import { CssBaseline, Container, Box } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from 'theme';
@@ -18,9 +17,12 @@ function MyApp({ Component, pageProps }: AppProps): ReactChild {
     return (
         <>
             <CssBaseline />
-            <GoogleFonts href="https://fonts.googleapis.com/icon?family=Material+Icons" />
             <Head>
                 <title>Create Next App</title>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ThemeProvider theme={theme}>
